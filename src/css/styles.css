@@ -1,30 +1,123 @@
-.container{}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    background-color: bisque;
+    margin-inline: auto;
+}
 
-.header__wrapper {}
+.header__wrapper {
+    background-color: #4b361f;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
-.logo {}
+.logo {
+    width: 94px;
+    height: 94px;
+    background-color: #9f8a6b;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 60px;
+}
 .logo .logo__link {}
 
-.menu {}
-.menu .menu__item {}
+.menu {
+    background-color: #e0ccac;
+}
+.menu .menu__item {
+    padding: 10px;
+    display: inline-block;
+}
 .menu .menu__item .menu__item--active {}
 
-.main_wrapper {}
+.main_wrapper {
+    background-color: #62300d;
+    display: flex;
+    flex-direction: column;
+}
 
-.mainArticle {}
+.mainArticle {
+    background-color: #9f8a6b;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 650px ) {
+    .main_wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 .mainArticle .mainArticle__hdl {}
 .mainArticle .mainArticle__text {}
 .mainArticle .mainArticle__related {}
 
-.related {}
-.related .related__item {}
+.related {
+    background-color: #af9c76;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    align-self: center;
+}
+.related .related__item {
+    background-color: blanchedalmond;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
 
-.aside {}
-.aside .aside__item {}
+.aside {
+    background-color: #7a624e;
+    display: flex;
+    justify-content: space-around;
+    order: -1;
+}
 
-.footer__wrapper {}
+@media screen and (min-width: 400px) {
+    .aside {
+        order: 0;
+    }
+}
 
-.secondaryMenu {}
-.secondaryMenu .secondaryMenu__item {}
+@media screen and (min-width: 650px) {
+    .aside {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+.aside .aside__item {
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
 
-.copyright {}
+}
+
+.footer__wrapper {
+    background-color: #af9c76;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.secondaryMenu {
+    display: inline-block;
+    justify-content: space-between;
+}
+.secondaryMenu .secondaryMenu__item {
+    padding: 5px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
